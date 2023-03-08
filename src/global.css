@@ -1,0 +1,66 @@
+@import url('../node_modules/simpledotcss/simple.min.css');
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: seagreen;
+  }
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.7;
+  font-size: 1.4rem;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+body > div {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+article, aside {
+  border-color: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.2em 0 .5em 0;
+  color:seagreen;
+}
+.container {
+  display: flex;
+}
+article {
+  flex: 1 0 68%;
+}
+aside {
+  margin-top: 3rem;
+  flex: 1 0 32%;
+}
+a {
+  text-decoration: none;
+  opacity: 0.85;
+  transition: all .25s ease-in-out;
+}
+a:hover {
+  opacity: 1;
+}
+nav.main-nav {
+  background-color:honeydew;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 900;
+  font-size: 90%;
+  text-transform: uppercase;
+}
+main {
+  padding: 1rem 2rem;
+  background-color: rgba(255,255,255,0.05);
+}
+footer.site-footer {
+  background-color:honeydew;
+  display: flex;
+  justify-content: center;
+  font-size: 75%;
+  grid-row: 3;
+  position: sticky;
+  bottom: 0;
+}
