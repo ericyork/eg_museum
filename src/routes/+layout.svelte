@@ -1,13 +1,19 @@
 <script>
-  import '../global.css';
-  import Nav from '../inc/Nav.svelte';
-  import Footer from '../inc/Footer.svelte';
+  import '$lib/global.css';
+  import Nav from '$lib/Nav.svelte';
+  import Aside from '$lib/Aside.svelte';
+  import Footer from '$lib/Footer.svelte';
 </script>
 
 <Nav />
 
-<main>
-  <slot />
+<main class="container">
+  <article>
+    <slot />
+  </article>
+  <aside>
+    <Aside />
+  </aside>
 </main>
 
 <Footer />
